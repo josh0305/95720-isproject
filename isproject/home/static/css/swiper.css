@@ -1,0 +1,15 @@
+:root{
+    --swiper-pagination-color: #F75000;
+}
+
+.swiper-pagination-bullets {
+    width: 50px;
+    height: 50px;
+}
+.swiper-button-next { 
+    color: #000 !important;    
+}
+
+.swiper-button-prev { 
+    color:  #000 !important;
+}
