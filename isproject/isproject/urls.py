@@ -15,8 +15,25 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from App.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', include('home.urls')),
 ]
+
+# urlpatterns = [
+#     path('index/', getTweetsCreatedTime),
+# ]
+
+urlpatterns = [
+    path('companyInfo/', extractCompanyInfoFromTwitterAPI),
+]
+
+# urlpatterns = [
+#     path('tweets/', extractTweetsFromTwitterAPI),
+# ]
+
+# urlpatterns = [
+#     path('search/', searchCompanyInfo),
+# ]
