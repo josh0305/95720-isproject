@@ -69,10 +69,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
         <div class="w3-half">
           <input class="w3-input w3-border" type="text" placeholder="enter keyword">
           <div>
-            <label><br> Choose the start date :</label>
-            <input type="date" id="startdt">
-            <label><br><br> Choose the end date :</label>
-            <input type="date" id="enddt">
+            <label><br> Choose the period :</label>
+            <select id="query_interval">
+              <option value="3m">Last 3 months</option>
+              <option value="6m">Last 6 months</option>
+              <option value="1y">Last 1 year</option>
+              <option value="2y">Last 2 years</option>
+            </select>
           </div>
         </div>
       </div>
