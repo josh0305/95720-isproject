@@ -8,16 +8,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 {% load static %}
-<!-- css for swiper -->
-<link href="{% static 'css/plugin.css' %}" rel="stylesheet" type="text/css">
-<link href="{% static 'css/swiper.css' %}" rel="stylesheet" type="text/css">
-<!-- js for swiper -->
-<script type="text/javascript" src="{% static 'js/jquery-latest.min.js' %}"></script>
-<!--- swiper -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!-- js for tab -->
 <script src="{% static 'js/tab.js' %}"></script>
 <style>
@@ -35,19 +25,23 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 
 <!-- Front Page -->
 <header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
-  <!--swiper-->
-        <!-- 1200 swiper -->
-        <div class="swiper-container" id="s_pic">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="{% static 'images/social-listening.jpeg' %}" width="1500" height="788" /></div>
-            <div class="swiper-slide"><img src="{% static 'images/social-listening-intro.jpg' %}" width="1450" height="785" /></div>
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
+  <!-- Welcome and Intro -->
+  <div class="w3-container w3-center">
+    <p> </p>
+  </div>
+
+  <!-- Wordcloud Sample and List-->
+  <div class="w3-row-padding">
+    <div class="w3-twothird w3-margin-bottom">
+      <img src="{% static 'images/wordcloud_sample.jpeg' %}" style="width:100%">
+    </div>
+    <div class="w3-third">
+      <div class="w3-container" style="height:100%">
+        <h3 class="w3-deep-orange w3-center">Click the words to find out more</h3>
+        <h4>1 Big<br>2 Data<br>3 Large<br>4 Information<br>5 Storage<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br></h4>
+      </div>
+    </div>
+  </div>
 </header>
 
 <!-- Page content -->
@@ -55,7 +49,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 
   <!-- All about Startups -->
   <div class="w3-container" >
-    <h2>All about Startups</h2>
+    <h2>Explore More about Startups</h2>
     <div class="w3-bar w3-black">
       <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'keyword');"><i class="fa fa-lightbulb-o w3-margin-right"></i>Buzzwords</button>
       <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'compname');"><i class="fa fa-group w3-margin-right"></i>Company Info</button>
